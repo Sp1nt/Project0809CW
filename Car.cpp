@@ -14,7 +14,7 @@ Car::Car()
 Car::Car(const char* m, const char* c, int y, double pr)
 {
 	this->model = new char[strlen(m) + 1];
-	strcpy_s(this->model, strlen(m) + 1,m);
+	strcpy_s(this->model, strlen(m) + 1, m);
 
 	color = new char[strlen(c) + 1];
 	strcpy_s(this->color, strlen(c) + 1, c);
@@ -32,13 +32,13 @@ Car::~Car()
 void Car::Input()
 {
 	char buff[100];
-	
+
 	cout << "Input model car: ";
 	cin >> buff;
 	if (model != nullptr)
 	{
 		cout << "Delete -> " << model << "...\n";
-			delete [] model;
+		delete[] model;
 	}
 
 	this->model = new char[strlen(buff) + 1];
@@ -57,7 +57,7 @@ void Car::Input()
 
 	cout << "Input year: ";
 	cin >> year;
-	
+
 
 	cout << "Input price: ";
 	cin >> price;

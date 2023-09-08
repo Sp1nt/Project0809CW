@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	Car a("Audi A5", "White",2021, 24000);
+	Car a("Audi A5", "White", 2021, 24000);
 
 	char* model = a.GetModel();
 	cout << model << endl;
@@ -25,5 +25,5 @@ int main()
 	a.Print();
 
 
-	
+
 }
